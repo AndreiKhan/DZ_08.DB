@@ -35,6 +35,7 @@ M:N к примеру как в моей таблице, USERS ↔ ACHIEVEMENTS 
 
 ## ERD-диаграмма
 
+```mermaid
 erDiagram
     USERS {
         SERIAL id PK
@@ -135,3 +136,4 @@ erDiagram
     ROOMS ||--o{ BOOKINGS : "бронируется через"
     CATEGORIES ||--o{ DISHES : "содержит"
     USERS ||--o{ ACHIEVEMENTS : "получает"
+```
