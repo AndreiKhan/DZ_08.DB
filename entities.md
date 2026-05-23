@@ -6,14 +6,15 @@
 
 ### Поля
 
-| Поле          | Тип          | Обязательное | Описание                                                      |
-|---------------|--------------|--------------|---------------------------------------------------------------|
-| id            | SERIAL       | Да           | Уникальный идентификатор (PK)                                 |
-| email         | VARCHAR(255) | Да           | Email                                                         |
-| password_hash | VARCHAR(255) | Нет          | Хэш пароля                                                    |
-| display_name  | VARCHAR(100) | Да           | Имя пользователя                                              |
-| role          | VARCHAR(20)  | Да           | Роль: "user", "master", "admin" default: "user"               |
-| created_at    | TIMESTAMP    | Да           | Дата регистрации default: NOW()                               |
+| Поле            | Тип          | Обязательное | Описание                                                      |
+|-----------------|--------------|--------------|---------------------------------------------------------------|
+| id              | SERIAL       | Да           | Уникальный идентификатор (PK)                                 |
+| email           | VARCHAR(255) | Да           | Email                                                         |
+| password_hash   | VARCHAR(255) | Нет          | Хэш пароля                                                    |
+| display_name    | VARCHAR(100) | Да           | Имя пользователя                                              |
+| role            | VARCHAR(20)  | Да           | Роль: "user", "master", "admin" default: "user"               |
+| achievement_id  | INTEGER      | Да           | Достижения (FK - achievements.id)                             |
+| created_at      | TIMESTAMP    | Да           | Дата регистрации default: NOW()                               |
 
 ---
 
